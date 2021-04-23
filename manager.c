@@ -58,7 +58,7 @@ int loadData(Product *p){
 	//파일 내용을 읽어와서 배열에 값 추가하기
 	fp = fopen("product.txt", "rt");
 
-	if(fp == NULL){
+	if(fp == NULL){ // 파일 존재하지 않을 경우
 		printf("=> 파일 없음!\n");
 		return 0;
 	}
